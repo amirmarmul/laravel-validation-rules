@@ -33,9 +33,9 @@ class ValidationRulesServiceProvider extends ServiceProvider
      */
     protected function registerValidationRules()
     {
-        Validator::extend('basic_password', 'Kcdev\ValidationRules\Rules\BasicPassword@validate', __('validationRules::messages.basic_password'));
-        Validator::replacer('basic_password', 'Kcdev\ValidationRules\Rules\BasicPassword@replacer', __('validationRules::messages.basic_password'));
+        Validator::extend('basic_password', 'Kcdev\ValidationRules\Rules\BasicPassword@validate');
+        Validator::replacer('basic_password', 'Kcdev\ValidationRules\Rules\BasicPassword@replacer');
 
-        Validator::extend('current_password', 'Kcdev\ValidationRules\Rules\CurrentPassword@validate', __('validationRules::messages.current_password'));
+        Validator::extend('current_password', 'Kcdev\ValidationRules\Rules\CurrentPassword@validate');
     }
 }

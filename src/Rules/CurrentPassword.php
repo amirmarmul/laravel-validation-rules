@@ -11,8 +11,12 @@ class CurrentPassword implements Rule
     /**
      * Validate the given data against the provided rules.
      */
-    public function validate($attribute, $value, $parameters)
+    public function validate($attribute, $value, $parameters, $validator)
     {
+        $validator->setCustomMessages([
+            'current_password' => __('validationRules::messages.current_password'),
+        ]);
+
         return $this->passes($attribute, $value);
     }
 
