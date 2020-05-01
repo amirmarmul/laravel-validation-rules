@@ -3,7 +3,7 @@
     "description": "A set of laravel validation rules",
     "keywords": [
         "kcdev",
-        "laravel-alert"
+        "laravel-validation-rules"
     ],
     "homepage": "https://github.com/amirmarmul/laravel-validation-rules",
     "license": "MIT",
