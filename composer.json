@@ -1,0 +1,39 @@
+{
+    "name": "kcdev/laravel-validation-rules",
+    "description": "A set of laravel validation rules",
+    "keywords": [
+        "kcdev",
+        "laravel-alert"
+    ],
+    "homepage": "https://github.com/amirmarmul/laravel-validation-rules",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "amirmarmul",
+            "email": "amiruddinmarmul@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^6.0|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kcdev\\ValidationRules\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kcdev\\ValidationRules\\ValidationRulesServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
