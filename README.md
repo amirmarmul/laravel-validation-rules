@@ -12,7 +12,7 @@ composer require kcdev/laravel-validation-rules
 
 You need to publish:
 ```bash
-php artisan vendor:publish --provider="Kcdev\Setting\SettingServiceProvider"
+php artisan vendor:publish --provider="Kcdev\ValidationRules\ValidationRulesServiceProvider"
 ```
 
 ## Available Rules
