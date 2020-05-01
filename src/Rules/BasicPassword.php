@@ -16,9 +16,7 @@ class BasicPassword implements Rule
      */
     public function validate($attribute, $value, $parameters, $validator)
     {
-        $validator->setCustomMessages([
-            'basic_password' => __('validationRules::messages.basic_password'),
-        ]);
+        $validator->setCustomMessages(['basic_password' => $this->message()]);
 
         return $this->passes($attribute, $value);
     }
@@ -26,7 +24,7 @@ class BasicPassword implements Rule
     /**
      * Register a custom validator message replacer.
      */
-    public function replacer($message, $attribute, $rule, $parameters)
+    public function replaceMin($message, $attribute, $rule, $parameters)
     {
         return str_replace(':min', static::MIN_CHARACTER, $message);
     }
